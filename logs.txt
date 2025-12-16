@@ -1,0 +1,14 @@
+2025-12-13 17:19:33.313111|54214040|MSFT|100.0|ARIMA|6.0260|0.00
+2025-12-13 17:19:33.314627|54214040|ERROR|'current_price'|Traceback: Traceback (most recent call last):
+  File "D:\PycharmProjects\stock-forecast-bot\services\bot.py", line 72, in get_amount
+    caption=format_response(ticker, amount, best_model_name, best_model_info, recommendations,
+            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                            forecast),
+                            ^^^^^^^^^
+  File "D:\PycharmProjects\stock-forecast-bot\utils\response.py", line 4, in format_response
+    response += f"<b>Current price:</b> ${recommendations['current_price']:.2f}\n"
+                                          ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'current_price'
+
+2025-12-13 17:22:31.723166|54214040|MSFT|100.0|ARIMA|6.0260|0.00
+2025-12-16 21:27:35.188732|54214040|MSFT|1000.0|ARIMA|6.0258|0.79
